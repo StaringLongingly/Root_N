@@ -1,0 +1,4 @@
+repository "root_n@Studio_DataByte@cloud"
+  path "/"
+    br "/main"
+    co "/main"
