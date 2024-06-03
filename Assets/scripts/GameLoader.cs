@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameLoader : MonoBehaviour
 {
-    public Animator MenuAnimator;
+    public Animator MenuAnimator, FastModeAnimator;
     public AudioSource startsound;
 
     void Start ()
@@ -17,6 +17,7 @@ public class GameLoader : MonoBehaviour
 
     public void LoadTrigger ()
     {
+        FastModeAnimator.SetTrigger("StartGame");
         MenuAnimator.SetTrigger("trigger");
     }
 

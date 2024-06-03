@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: One who Stared Longingly at the Stars
-  productName: root_n
+  productName: Root(N)
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -141,7 +141,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 2
+  bundleVersion: 2.1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -163,7 +163,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.OnewhoStaredLonginglyattheStars.root_n
+    Android: com.OnewhoStaredLonginglyattheStars.RootN
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -289,7 +289,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: ab8b3eb92eb44684babeedf4a37c9f6b, type: 3}
+      m_Icon: {fileID: 2800000, guid: a61f917270ef8ce4ea5ad9919174e02b, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

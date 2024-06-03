@@ -7,6 +7,7 @@ public class MenuButton : MonoBehaviour
 {
     public Animator camAnimator;
     public AudioSource menubuttonhit;
+    public bool gotPressed = false;
 
     void Start ()
     {
@@ -17,6 +18,7 @@ public class MenuButton : MonoBehaviour
 
     public void LoadTrigger ()
     {
+        gotPressed = true;
         camAnimator.SetTrigger("menutrigger");
         menubuttonhit.Play(0);
     }

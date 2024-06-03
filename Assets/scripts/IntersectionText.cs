@@ -5,8 +5,8 @@ using TMPro;
 
 public class IntersectionText : MonoBehaviour
 {
-    private float textlist = 8;
-    private float scenelist = 3;
+    private int textlist = 8;
+    private int scenelist = 3;
 
     public bool isquotesstage;
     public bool quotesToggledOn;
@@ -23,7 +23,7 @@ public class IntersectionText : MonoBehaviour
 
         if (isquotesstage)
         {
-            float randomtext = Mathf.Round(UnityEngine.Random.Range(0, textlist - 1));
+           int randomtext = UnityEngine.Random.Range(0, textlist);
             switch (randomtext)
             {
                 case 7:
@@ -73,8 +73,8 @@ public class IntersectionText : MonoBehaviour
 
     public void LevelPicker()
     {
-        float randomscene = Mathf.Round(UnityEngine.Random.Range(0, scenelist - 1));
-
+        int randomscene = UnityEngine.Random.Range(0, scenelist);
+        Debug.Log("New Level: " + randomscene);
         switch (randomscene)
         {
             case 2:
