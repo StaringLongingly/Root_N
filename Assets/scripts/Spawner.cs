@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
     public AudioClip audioClip;
     public Transform childTransform;
     public bool gameHasEnded = false;
+    public float pitchDeviation = 0.1f;
     private int prefablist = 3;
     public int winScore = 5;
     public int objectsEntered = 0;
@@ -29,7 +30,7 @@ public class Spawner : MonoBehaviour
         if (PlayerPrefs.GetInt("quotesstate") == 1)
         {
             Debug.Log("Loading Intersection1..");
-            SceneManager.LoadScene("Intersection1");
+            SceneManager.LoadScene("Intersection");
         }
         else
         {
@@ -78,7 +79,7 @@ public class Spawner : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D col)
     {
-        audioSource.PlayOneShot(audioClip, new Vector2(-0.2f, 0.2f));
+        audioSource.PlayOneShot(audioClip, new Vector2(-pitchDeviation + 1, pitchDeviation + 1));
         childTransform.gameObject.GetComponent<Animator>().SetTrigger("EndGame");
         Instantiate(hiteffect, col.ClosestPoint(transform.position) - new Vector2(0, 2), transform.rotation);
         objectsEntered++;

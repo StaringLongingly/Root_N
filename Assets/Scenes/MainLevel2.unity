@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
+  isRotatingToTheRight: 0
 --- !u!95 &66960732
 Animator:
   serializedVersion: 5
@@ -338,9 +339,10 @@ MonoBehaviour:
   pinPrefab8: {fileID: 6380270983506700489, guid: 64bf8d19a6f3da14292c1c40d2b04396,
     type: 3}
   audioSource: {fileID: 1948168252}
-  audioClip: {fileID: 8300000, guid: d59deb8d0d2169c42a58b439260c6dab, type: 3}
+  audioClip: {fileID: 8300000, guid: 3d4efcf5928fddf4393cff68148175a2, type: 3}
   childTransform: {fileID: 282170128}
   gameHasEnded: 0
+  pitchDeviation: 0.5
   winScore: 0
   objectsEntered: 0
   hiteffect: {fileID: 117598655375440467, guid: 65b391f851f8cfe48be4bb57e4caf884,
